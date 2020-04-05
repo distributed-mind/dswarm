@@ -10,7 +10,7 @@ the port is an http service that takes requests at these endpoints:
 the /dht endpoint serves websocket rpc requests
 
 the /api endpoint serves https curl requests.
-right now the only implemented rpc call
+right now the only implemented rpc call is "ping"
 
 its all a work-in-progress. more work to be added soon.
 
@@ -30,7 +30,7 @@ the bucket is printed every 5 seconds
   ```
   curl -kvs https://localhost:port/api/ping
   ```
-^^^ this will tell the peer to perform n RPC ping to the top three closest peers in the bucket.
+^^^ this will tell the peer to perform an RPC ping to the top three closest peers in the bucket.
 
 ![screen-demo](demo.png)
 
