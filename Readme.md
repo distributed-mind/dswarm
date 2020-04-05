@@ -36,3 +36,9 @@ the bucket is printed every 5 seconds
 
 
 ## note
+some things to note:
+- all peers use 32 byte length keys for node-IDs, dht distance metrics, and i plan on using sha256 hashes for the dht keys, this parts from the kademlia standard
+- all peer dht connections use a self-signed certificate, i dunno, for fun
+- only the "ping" rpc method is implemented right now, more to come
+- secret handshake is used to ensure each peer is connecting to the right peerID (public-key validation)
+- this project is intended to be a local test-bed for playing with DHTs, hence the api endpoint
